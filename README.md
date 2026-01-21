@@ -30,8 +30,8 @@ This project builds a fully reproducible SQL pipeline that transform raw CSV dat
 - fact_sales: Measures (sales, quantity, discount, profit, shipping cost)
 - Foreign keys link to dimensions
 
-## Schema Diagram
-'''
+## Schema Setup
+```
                 dim_customer
                    |
                    | customer_id
@@ -45,7 +45,7 @@ fact_sales ---- dim_product
    dim_date
 
 fact_sales ---- dim_shipping (ship_mode, order_priority) 
-'''
+```
 
 
 ## Tools
@@ -81,7 +81,7 @@ KPI card - Total revenue
 
 
 ## Project Structure
-'''
+```
 ├── sql_scripts/
 │   ├── 01_schema_setup.sql
 │   ├── 02_raw_data.sql
@@ -93,7 +93,7 @@ KPI card - Total revenue
 ├── dashboard.png
 ├── README.md
 └── raw_zone/ (source data)
-'''
+```
 
 
 
