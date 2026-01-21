@@ -56,8 +56,7 @@ fact_sales ---- dim_shipping (ship_mode, order_priority)
 
 ## Example Queries
 - Sales by Category and Year
-```
-sql
+```sql
 SELECT p.category, d.year, SUM(f.sales) AS total_sales
 FROM global_superstore_analytics.fact_sales f
 JOIN global_superstore_analytics.dim_product p ON f.product_id = p.product_id
@@ -67,8 +66,7 @@ ORDER BY d.year, total_sales DESC;
 ```
 
 - Profitability by Shipping Mode
-```
-sql
+```sql
 SELECT s.ship_mode, SUM(f.profit) AS total_profit
 FROM global_superstore_analytics.fact_sales f
 JOIN global_superstore_analytics.dim_shipping s
