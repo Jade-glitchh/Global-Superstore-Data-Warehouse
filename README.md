@@ -50,6 +50,7 @@ fact_sales ---- dim_shipping (ship_mode, order_priority)
 
 ## Tools
 - Excel
+- SQL
 - PostgreSQL
 - Power BI
 - diagram.io
